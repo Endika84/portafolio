@@ -1,0 +1,68 @@
+<header>
+  <div class="main-user">
+    <div class="main-user__image">
+      <img src="../assets/images/user/selfie.jpg" alt="Endika Llonin Abasolo"/>
+    </div>
+    <h1 class="main-user__name">Endika Llonin Abasolo</h1>
+    <h2 class="main-user__role">
+      Maquetador web
+      <span class="subtitle">UX-UI & Front-End designer</span>
+    </h2>
+  </div>
+  <a class="menu-btn only-responsive" (click)="showMenu()">
+    <div id="nav-icon2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </a>
+  <nav class="main-menu">
+    <ul class="menu" >
+      <li class="menu-item">
+        <a class="menu-item__link" routerLink="/presentacion" [routerLinkActive]="['active']" ngClass="{{menuItems[0]}}" (click)="changeMenu($event)">Me presento</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item__link" routerLink="/proyectos" [routerLinkActive]="['active']" ngClass="{{menuItems[1]}}" (click)="changeMenu($event)">Proyectos</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item__link" routerLink="/conocimientos" [routerLinkActive]="['active']" ngClass="{{menuItems[2]}}" (click)="changeMenu($event)">Conocimientos</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item__link" routerLink="/experiencia" [routerLinkActive]="['active']" ngClass="{{menuItems[3]}}" (click)="changeMenu($event)">Experiencia</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item__link" routerLink="/contacto" [routerLinkActive]="['active']" ngClass="{{menuItems[4]}}" (click)="changeMenu($event)">Contacto</a>
+      </li>
+    </ul>
+    <div class="menu-marker {{selectedItem}}">
+      <span class="menu-marker-selector"></span>
+    </div>
+  </nav>
+  <p class="download-cv">
+    <a href="../assets/pdf/CV-Maquetador-web_Endika-Llonin-Abasolo.pdf" download title="Se descargará mi curriculum en formato PDF"><span>Descarga mi currículum en PDF</span></a>
+  </p>
+</header>
+<script>
+  let pageClass= pageTitle.trim().toLowerCase().replace(/\s/g, '$');
+</script>
+<main [ngClass]="['main-' + pageTitle.trim().toLowerCase()]">
+  <div class="page-top">
+    <div class="left-block">
+      <a onclick="window.history.back()" alt="Ir a la pantalla anterior">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+      </a>
+      
+    </div>
+    <div class="right-block">
+      <p class="current-time">{{ currentDate | date: "dd-MM-yyyy - HH:mm"}}</p>
+      <h1 class="page-title">{{pageTitle}}</h1>
+    </div>
+  </div>
+  <section class="main-content">
+    <!-- <app-splash-screen></app-splash-screen> -->
+    <router-outlet></router-outlet>
+  </section>
+</main>

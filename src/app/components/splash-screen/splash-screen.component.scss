@@ -1,0 +1,75 @@
+@import "../../../styles/variables";
+
+$anim-speed: 400ms;
+
+.app-splash-screen {
+  background: $body-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+  .app-splash-inner{
+    top: 40px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: splash-in $anim-speed linear;
+    animation-delay: 450ms;
+    //animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    .app-logo {
+        //background: url("./../../../assets/lighty.svg");
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-position: center;
+        background-size: contain;
+        width: 130px;
+        height: 30px;
+      }
+    .app-label{
+      margin-top: -1.5rem;
+      color: #fff;
+      font-size: 1em;
+      font-family: "consolas";
+    }
+    .app-loader {
+      margin-top: -5rem;
+      background: url("../../../assets/images/image-asset.gif");
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: center;
+      background-size: contain;
+      width: 210px;
+      height: 220px;
+      opacity: 1;
+      filter: grayscale(100%) sepia(204%) brightness(76%) hue-rotate(311deg) contrast(117%) invert(400%);
+      -webkit-filter: grayscale(100%) sepia(204%) brightness(76%) hue-rotate(311deg) contrast(117%) invert(400%);
+}
+  }
+}
+
+@keyframes splash-in{
+    0%{
+        opacity: 0;
+        top: 40px;
+    }
+    50%{
+        opacity: .25;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}

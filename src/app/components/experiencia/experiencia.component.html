@@ -1,0 +1,19 @@
+<div class="empresas">
+    <h2>He trabajado en...</h2>
+    <ul class="empresas-list">
+        <li class="empresa" *ngFor="let empresa of empresas">
+            <div class="logo-container">
+                <img src="../../../assets/images/empresas/logos/{{empresa.logo}}" alt="{{empresa.nombre}}">
+            </div>
+            <div class="info-container">
+                <p class="dates">{{empresa.fechaInicio}} / {{empresa.fechaFinal}}</p>
+                <p class="position">{{empresa.puesto}}</p>
+                <h3>{{empresa.nombre}}</h3>
+                <p class="description">
+                    {{empresa.descripcion}}
+                </p>
+            </div>
+            
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,194 @@
+@import "../../../styles/variables";
+
+$anim-speed: 300ms;
+
+h2{
+    font-size: $font-xxll;
+    color: $accent-color;
+    margin-top: 2.5rem;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        margin-right: 1.2rem;
+        margin-bottom: 0.5rem;
+        line-height: 24px;
+        font-size: 1rem;
+        span{
+            font-family: $font-a-regular;
+            font-weight: 100;
+            font-size: 14px;
+            opacity: .4;
+        }
+    }
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    .left-content{
+        padding-right: 4rem;
+        max-width: 600px;
+        min-width: 400px;
+        width: 100%;
+        position: relative;
+        animation: left-in $anim-speed linear;
+        animation-fill-mode: forwards;
+        h2{
+            width: max-content;
+            &:after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 4px;
+                margin-top: .7rem;
+            }
+            &.green{
+                color: $accent-color;
+                &:after{
+                    background-color: $accent-color;
+                }
+            }
+            &.pink{
+                color: $conocimientos-bg;
+                &:after{
+                    background-color: $conocimientos-bg;
+                }
+            }
+            &.blue{
+                color: $proyectos-bg;
+                &:after{
+                    background-color: $proyectos-bg;
+                }
+            }
+            &.red{
+                color: $experiencia-bg;
+                &:after{
+                    background-color: $experiencia-bg;
+                }
+            }
+            &.yellow{
+                color: $contacto-bg;
+                &:after{
+                    background-color: $contacto-bg;
+                }
+            }
+        }
+    }
+    .right-content{
+        max-width: 400px;
+        padding-right: 2rem;
+        position: relative;
+        animation: right-in $anim-speed linear;
+        animation-fill-mode: forwards;
+        ul{
+            flex-direction: column;
+            li{
+                margin-right: 0rem;
+                margin-bottom: 0.3rem;
+                line-height: 24px;
+
+            }
+        }
+    }
+}
+
+
+@keyframes left-in{
+    0%{
+        opacity: 0;
+        top: 70px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+@keyframes right-in{
+    0%{
+        opacity: 0;
+        top: -70px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+@media (max-width: 1300px){
+    section{
+        .right-content{
+            padding-right: 1rem;
+        }
+    }
+}
+@media (max-width: 1200px){
+    section{
+        flex-wrap: wrap;
+        .left-content{
+            max-width: inherit;
+            min-width: inherit;
+            padding-right: 0rem;
+        }
+        .right-content{
+            width: 100%;
+            max-width: inherit;
+            padding-right: 1rem;
+            .swiper-container{
+                max-width: 300px;
+                margin: 0px;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    section{
+        flex-wrap: inherit;
+        .left-content{
+            max-width: 400px;
+            min-width: inherit;
+            padding-right: 2rem;
+        }
+        .right-content{
+            max-width: 370px;
+            padding-right: 0px;
+        }
+    }
+}
+@media (max-width: 700px){
+    section{
+        flex-wrap: wrap;
+        .left-content{
+            max-width: inherit;
+            min-width: inherit;
+            padding-right: 0rem;
+            h2{
+                margin-top: 1.5rem;
+                font-size: 1.5rem;
+                &:first-child{
+                    margin-top: 0rem;
+                }
+            }
+        }
+        .right-content{
+            max-width: inherit;
+            padding-right: 0px;
+            h2{
+                width: max-content;
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    margin-top: 0.7rem;
+                    background-color: #8ED3BB;
+                }
+            }
+            .swiper-container{
+                max-width: 450px;
+                margin: 0px;
+            }
+        }
+    }
+}
