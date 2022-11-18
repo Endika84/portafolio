@@ -9,8 +9,8 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { ProyectoDetailComponent } from './components/proyecto-detail/proyecto-detail.component';
 
 const routes: Routes = [
-  { path: '', component: PresentacionComponent },
-  { path: 'home', component: PresentacionComponent },
+  { path: '', redirectTo: '/presentacion', pathMatch: 'full' },
+  { path: 'home', redirectTo: '/presentacion', pathMatch: 'full' },
   { path: 'presentacion', component: PresentacionComponent },
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'proyectos/:proyecto', component: ProyectoDetailComponent },

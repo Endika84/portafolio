@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="18" viewBox="0 0 29 18">
   <g id="Grupo_41" data-name="Grupo 41" transform="translate(-1237 -149)">
-    <rect id="Rectángulo_17" data-name="Rectángulo 17" width="7" height="4" rx="2" transform="translate(1237 149)" fill="#8ed3bb"/>
-    <rect id="Rectángulo_22" data-name="Rectángulo 22" width="20" height="4" rx="2" transform="translate(1246 149)" fill="#8ed3bb"/>
-    <rect id="Rectángulo_18" data-name="Rectángulo 18" width="7" height="4" rx="2" transform="translate(1237 156)" fill="#8ed3bb"/>
-    <rect id="Rectángulo_21" data-name="Rectángulo 21" width="20" height="4" rx="2" transform="translate(1246 156)" fill="#8ed3bb"/>
-    <rect id="Rectángulo_19" data-name="Rectángulo 19" width="7" height="4" rx="2" transform="translate(1237 163)" fill="#8ed3bb"/>
-    <rect id="Rectángulo_20" data-name="Rectángulo 20" width="20" height="4" rx="2" transform="translate(1246 163)" fill="#8ed3bb"/>
+    <rect id="Rectángulo_17" data-name="Rectángulo 17" width="7" height="4" rx="2" transform="translate(1237 149)" fill="#cfff88"/>
+    <rect id="Rectángulo_22" data-name="Rectángulo 22" width="20" height="4" rx="2" transform="translate(1246 149)" fill="#cfff88"/>
+    <rect id="Rectángulo_18" data-name="Rectángulo 18" width="7" height="4" rx="2" transform="translate(1237 156)" fill="#cfff88"/>
+    <rect id="Rectángulo_21" data-name="Rectángulo 21" width="20" height="4" rx="2" transform="translate(1246 156)" fill="#cfff88"/>
+    <rect id="Rectángulo_19" data-name="Rectángulo 19" width="7" height="4" rx="2" transform="translate(1237 163)" fill="#cfff88"/>
+    <rect id="Rectángulo_20" data-name="Rectángulo 20" width="20" height="4" rx="2" transform="translate(1246 163)" fill="#cfff88"/>
   </g>
 </svg>

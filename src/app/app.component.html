@@ -1,7 +1,10 @@
 <header>
   <div class="main-user">
     <div class="main-user__image">
-      <img src="../assets/images/user/selfie.jpg" alt="Endika Llonin Abasolo"/>
+      <picture>
+        <source srcset="../assets/images/user/selfie.webp" type="image/webp">
+        <img width="246" height="197" src="../assets/images/user/selfie.jpg" alt="Endika Llonin Abasolo - maquetador web - frontend"/>
+      </picture>
     </div>
     <h1 class="main-user__name">Endika Llonin Abasolo</h1>
     <h2 class="main-user__role">
@@ -9,7 +12,7 @@
       <span class="subtitle">UX-UI & Front-End designer</span>
     </h2>
   </div>
-  <a class="menu-btn only-responsive" (click)="showMenu()">
+  <div class="menu-btn only-responsive" (click)="showMenu()">
     <div id="nav-icon2">
       <span></span>
       <span></span>
@@ -18,7 +21,7 @@
       <span></span>
       <span></span>
     </div>
-  </a>
+  </div>
   <nav class="main-menu">
     <ul class="menu" >
       <li class="menu-item">
@@ -41,9 +44,11 @@
       <span class="menu-marker-selector"></span>
     </div>
   </nav>
+  <!-- Comentado por el momento
   <p class="download-cv">
     <a href="../assets/pdf/CV-Maquetador-web_Endika-Llonin-Abasolo.pdf" download title="Se descargará mi curriculum en formato PDF"><span>Descarga mi currículum en PDF</span></a>
   </p>
+  -->
 </header>
 <script>
   let pageClass= pageTitle.trim().toLowerCase().replace(/\s/g, '$');
@@ -51,7 +56,7 @@
 <main [ngClass]="['main-' + pageTitle.trim().toLowerCase()]">
   <div class="page-top">
     <div class="left-block">
-      <a onclick="window.history.back()" alt="Ir a la pantalla anterior">
+      <a onclick="window.history.back()" rel="nofollow" alt="Ir a la pantalla anterior">
         <i class="fa fa-angle-left" aria-hidden="true"></i>
       </a>
       

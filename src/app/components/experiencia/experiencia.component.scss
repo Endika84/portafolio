@@ -3,9 +3,10 @@
 $anim-speed: 300ms;
 
 h2{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: $font-b-regular;
     font-weight: 100;
+    text-align: center;
 }
 .empresas{
     max-width: 1196px;
@@ -114,6 +115,7 @@ h2{
 @media (max-width: 992px){
     .empresas-list {
         margin-right: 0rem;
+        margin-top: 1.5rem;
         .empresa{
             flex-direction: row;
             .logo-container{
@@ -128,10 +130,13 @@ h2{
     .empresas-list {
         .empresa{
             flex-direction: column;
+            padding: 1rem 1rem 1.5rem 1rem;
             .logo-container{
                 margin-bottom: 1.1rem;
-                padding: 2rem 1rem;
-                margin-right: -2rem;
+                padding: 1rem 1rem;
+                margin-right: -1rem;
+                margin-top: -1rem;
+                margin-left: -1rem;
             }
             .info-container{
                 .dates{

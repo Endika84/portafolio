@@ -60,10 +60,30 @@ export class ProyectosComponent implements OnInit {
     event.target.classList.add("active");
   }
 
-  changeView(){
+  changeViewList(ele: any){
+    let element= <HTMLElement> ele.target;
+    let element2= <HTMLElement> document.querySelector(".img-grid");
+    let element3= <HTMLElement> document.querySelector(".txt-grid");
+    let element4= <HTMLElement> document.querySelector(".txt-list");
     let grid= document.getElementsByClassName("card-list-grid")[0];
     grid.classList.toggle("second-layout");
-    console.log(grid);
+    element.style.display="none";
+    element2.style.display="block";
+    element3.style.display="block";
+    element4.style.display="none";
+  }
+
+  changeViewGrid(ele: any){
+    let element= <HTMLElement> ele.target;
+    let element2= <HTMLElement> document.querySelector(".img-list");
+    let element3= <HTMLElement> document.querySelector(".txt-grid");
+    let element4= <HTMLElement> document.querySelector(".txt-list");
+    let grid= document.getElementsByClassName("card-list-grid")[0];
+    grid.classList.toggle("second-layout");
+    element.style.display="none";
+    element2.style.display="block";
+    element3.style.display="none";
+    element4.style.display="block";
   }
 
 }

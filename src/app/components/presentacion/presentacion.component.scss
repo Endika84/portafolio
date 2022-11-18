@@ -5,12 +5,12 @@ $anim-speed: 300ms;
     align-items: center;
     justify-content: center;
     min-width: 100%;
+    min-height: 100%;
 }
 
 .presentation-content{
     max-width: 700px;
-    margin-top: 3rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     position: relative;
     animation: word-in $anim-speed linear;
     animation-fill-mode: forwards;
@@ -24,7 +24,7 @@ $anim-speed: 300ms;
 
 @media (max-width: 992px){
     .presentation-content{
-        margin-top: 7.5rem;
+        margin-top: 9rem;
         margin-right: 0rem;
         h2{
             margin-top: .7rem;

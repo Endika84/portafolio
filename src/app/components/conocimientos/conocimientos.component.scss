@@ -28,6 +28,8 @@ ul{
 section{
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100%;
     .left-content{
         padding-right: 4rem;
         max-width: 600px;
@@ -37,43 +39,61 @@ section{
         animation: left-in $anim-speed linear;
         animation-fill-mode: forwards;
         h2{
-            width: max-content;
+            width: fit-content;
+            font-size: 1.35rem;
+            font-weight: 500;
+            padding: 6px 10px;
+            margin-bottom: 1.5rem;
             &:after{
                 content: "";
                 display: block;
                 width: 100%;
                 height: 4px;
                 margin-top: .7rem;
+                opacity: .2;
+                display: none;
             }
+            
             &.green{
                 color: $accent-color;
+                background-color: rgba($accent-color, 0.1);
                 &:after{
                     background-color: $accent-color;
                 }
             }
             &.pink{
                 color: $conocimientos-bg;
+                background-color: rgba($conocimientos-bg, 0.1);
                 &:after{
                     background-color: $conocimientos-bg;
                 }
             }
             &.blue{
                 color: $proyectos-bg;
+                background-color: rgba($proyectos-bg, 0.1);
                 &:after{
                     background-color: $proyectos-bg;
                 }
             }
             &.red{
                 color: $experiencia-bg;
+                background-color: rgba($experiencia-bg, 0.1);
                 &:after{
                     background-color: $experiencia-bg;
                 }
             }
             &.yellow{
                 color: $contacto-bg;
+                background-color: rgba($contacto-bg, 0.1);
                 &:after{
                     background-color: $contacto-bg;
                 }
+            }
+        }
+        ul{
+            margin-left: 1rem;
+            li{
+                font-weight: 100;
             }
         }
     }
@@ -83,13 +103,25 @@ section{
         position: relative;
         animation: right-in $anim-speed linear;
         animation-fill-mode: forwards;
+        h2{
+            font-size: 1.2rem;
+            font-weight: 500;
+            background: #2b3e4a;
+            padding: 6px 10px;
+            display: inline-block;
+            color: #ffffff;
+            &:not(:first-child){
+                margin-top: 1.5rem;
+            }
+        }
         ul{
             flex-direction: column;
+            margin-left: 11px;
             li{
                 margin-right: 0rem;
                 margin-bottom: 0.3rem;
                 line-height: 24px;
-
+                font-weight: 100;
             }
         }
     }
@@ -144,28 +176,33 @@ section{
 }
 @media (max-width: 992px){
     section{
-        flex-wrap: inherit;
+        flex-wrap: wrap;
         .left-content{
-            max-width: 400px;
+            //max-width: 400px;
             min-width: inherit;
             padding-right: 2rem;
         }
         .right-content{
-            max-width: 370px;
+            //max-width: 370px;
             padding-right: 0px;
+            h2{
+                font-size: 1.35rem;
+            }
         }
     }
 }
-@media (max-width: 700px){
+@media (max-width: 767px){
     section{
         flex-wrap: wrap;
         .left-content{
             max-width: inherit;
             min-width: inherit;
             padding-right: 0rem;
+            margin-top: 1rem;
             h2{
-                margin-top: 1.5rem;
-                font-size: 1.5rem;
+                margin-top: 2rem;
+                font-size: 1.25rem;
+                font-weight: 100;
                 &:first-child{
                     margin-top: 0rem;
                 }
@@ -174,20 +211,14 @@ section{
         .right-content{
             max-width: inherit;
             padding-right: 0px;
+            margin-bottom: 1.5rem;
             h2{
-                width: max-content;
-                &:after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 4px;
-                    margin-top: 0.7rem;
-                    background-color: #8ED3BB;
-                }
+                font-weight: 100;
             }
             .swiper-container{
-                max-width: 450px;
-                margin: 0px;
+                max-width: 320px;
+                margin: 0px auto;
+                margin-top: 1rem;
             }
         }
     }

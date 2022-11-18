@@ -7,10 +7,11 @@
     max-width: 1196px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0.3rem;
     .tags-filter{
         &__item{
             font-family: $font-b-regular;
-            font-weight: 400;
+            font-weight: 300;
             letter-spacing: .60px;
             font-size: $font-xxs;
             background-color: transparent;
@@ -29,20 +30,27 @@
             &.active{
                 background-color: $accent-color;
                 color: $body-bg;
+                font-weight: 600;
             }
         }       
     }
     .change-view{
         margin-bottom: .3rem;
-        transition: ease-in .2s;
+        transition: ease-in .1s;
         margin-left: auto;
-        
+        display: flex;
+        flex-direction: row-reverse;
         img{
-            opacity: .5;
+            display: block;
             cursor: pointer;
             &:hover{
-                opacity: 1;
+                transform: scale(.92);
             }
+        }
+        span{
+            font-size: 15px;
+            font-weight: 100;
+            margin-right: .8rem;
         }
     }
 }
@@ -50,11 +58,27 @@
 @media screen and (max-width: 992px) {
     .filter-bar{
         .tags-filter{
-
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 0rem;
+            &::-webkit-scrollbar {
+                height: 5px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: #202d36;
+                border-radius: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 100px;
+                border: 0px solid transparent;
+                background-clip: content-box;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
         }
         .change-view{
             position: absolute;
-            top: 24px;
+            top: 26px;
             right: 1.5rem;
         }
     }
@@ -73,10 +97,21 @@ $anim-speed: 270ms;
     }
 }
 
+.no-files{
+    font-weight: 100;
+    text-align: center;
+    height: calc(100vh - 192px);
+    font-size: 1.3rem;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-list-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 13px;
+    grid-gap: 20px;
     height: calc(100vh - 225px);
     overflow-y: auto;
     padding-right: 8px;
@@ -146,6 +181,7 @@ $anim-speed: 270ms;
 @media screen and (max-width: 992px) {
     .card-list-grid {
         grid-template-columns: repeat(3, 1fr);
+        height: calc(100vh - 192px);
     }
 }
 
@@ -158,6 +194,10 @@ $anim-speed: 270ms;
 @media screen and (max-width: 660px) {
     .card-list-grid {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: -1rem;
+        padding-left: 1rem;
+        margin-right: -1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -167,30 +207,35 @@ $anim-speed: 270ms;
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: ease-in .25s;
+    @media (max-width:660px){
+        border-color: rgba(255, 255, 255, 0.2);
+    }
     &__block{
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-position: top;
+        background-size: 100%;
         position: relative;
-        border-radius: 5px;
-        padding: 17px;
+        padding: 20px;
         min-height: 225px;
         display: flex;
         flex-direction: column;
         transition: ease-in .25s;
         overflow: hidden;
+        text-align: left;
         h1{
             font-family: $font-b-regular;
             font-weight: 600;
-            font-size: 35px;
-            line-height: 40px;
+            font-size: 26px;
+            line-height: 30px;
             margin: auto 0px 8px 0px;
-            color: $base-font-color;
+            color: $proyectos-bg;
             z-index: 1;
             transition: ease-in .25s;
             position: absolute;
-            bottom: 30px;
+            bottom: 39px;
         }
         .categories{
             font-family: $font-b-regular;
@@ -201,23 +246,26 @@ $anim-speed: 270ms;
             margin: 0px;
             z-index: 1;
             position: absolute;
-            bottom: 17px;
+            bottom: 28px;
             transition: ease-in .25s;
             font-weight: 300;
             font-family: "Rawline";
         }
-        button{
-            background: none;
-            border: 1px solid $overlay-font-color;
-            padding: 10px 15px;
-            border-radius: 20px;
-            color: $overlay-font-color;
+        .description{
+            font-family: $font-b-regular;
+            font-weight: 100;
+            font-size: 13px;
+            line-height: 15px;
+            color: $base-font-color;
+            margin: 0px;
+            padding-right: 1rem;
+            z-index: 1;
             position: absolute;
-            bottom: -80px;
+            bottom: 17px;
+            transition: ease-in .25s;
+            font-weight: 300;
+            font-family: "Rawline";
             opacity: 0;
-            transition: ease-in-out .25s;
-            width: calc(100% - 34px);
-            z-index: 2;
         }
         &--overlay{
             position: absolute;
@@ -227,34 +275,38 @@ $anim-speed: 270ms;
             width: 100%;
             left: 0px;
             bottom: -100%;
-            border-radius: 5px;
+            box-sizing: border-box;
             transition: ease-in-out .25s;
         }
     }
-    &:hover {
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $custom-white;
+        border-color: rgba($custom-white, .4);
         .card-project__block{
-            text-align: center;
+            text-align: left;
+            background-size: 120%;
+            transition: ease-in .25s;
             h1{
-                font-size: 30px;
+                font-size: 32px;
                 line-height: 35px;
-                color: $overlay-font-color;
-                bottom: 85px;
+                bottom: 127px;
             }
             .categories{
-                color: $overlay-font-color;
                 font-weight: 500;
-                bottom: 72px;
+                bottom: 115px;
             }
-            button{
-                display: block;
-                cursor: pointer;
-                margin-top: 1rem;
+            .description{
                 opacity: 1;
-                bottom: 17px;
-                width: calc(100% - 34px);
+                bottom: 20px;
+                font-size: 18px;
+                text-align: left;
+                line-height: 23px;
+                
             }
             &--overlay{
-                background-color: rgba($overlay-bg, .85);
+                background-color: rgba(22, 34, 42, .76);
                 bottom: 0%;
             }
         }
