@@ -15,14 +15,16 @@
     </div>
 </div>
 <div *ngIf="!proyectos.length" class="no-files">
-    No existen proyectos para la categoria seleccionada.
+    <p>
+        No existen proyectos para la categoria seleccionada.
+    </p>
 </div>
 <div class="card-list-grid" *ngIf="proyectos.length">
     
     <div class="grid-item" *ngFor="let proyecto of proyectos">
         <article>
             <a class="card card-project" [routerLink]="['/proyectos', proyecto.titulo]" [attr.aria-label]="'Ver el detalle del proyecto de ' + proyecto.titulo">
-                <div class="card-project__block" [style.backgroundImage]="'linear-gradient(rgba(38, 53, 63, 0.1) 10%, rgba(17, 28, 34, 1) 75%), url(../../../assets/images/projects/' + proyecto.titulo.toLowerCase() +'/portada/' + proyecto.portada +')'">
+                <div class="card-project__block" [style.backgroundImage]="'linear-gradient(rgba(38, 53, 63, 0.3) 10%, rgba(17, 28, 34, 1) 50%), url(../../../assets/images/projects/' + proyecto.titulo.toLowerCase() +'/portada/' + proyecto.portada +')'">
                     <h1>{{proyecto.titulo}}</h1>
                     <p class="categories">{{proyecto.categorias.join(' - ')}}</p>
                     <p class="description">{{proyecto.descripcion}}</p>   

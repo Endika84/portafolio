@@ -23,9 +23,9 @@ header{
             border: 10px solid rgba(255, 255, 255, 0.06);
             img, source{
                 position: absolute;
-                width: 140%;
+                width: 123%;
                 height: auto;
-                transform: translate(-50%, -50%);
+                transform: translate(-52%, -45%);
                 top: 50%;
                 left: 50%;
             }
@@ -404,11 +404,45 @@ header{
 }
 
 .main-proyectos{
+    .page-top{
+        @media (max-width: 992px){
+            margin-bottom: .7rem;
+        }
+    }
     .main-content{
         height: auto;
         overflow-y: inherit;
     }
 }
+
+@media screen and (min-width:993px) {
+    .main-detalle{
+        .page-top{
+            .left-block{
+                display: flex;
+                align-items: center;
+                a {
+                    cursor: pointer;
+                    i{
+                        display: flex;
+                        align-items: center;
+                        &:before {
+                            font-size: 1.7rem;
+                            margin-right: 0.8rem;
+                        }
+                        &:after{
+                            font-size: 1.2rem;
+                            color: $custom-white;
+                            font-family: $font-a-regular;
+                            content: "Volver al listado";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /*Responsive cabecera paginas interiores*/
 @media (max-width: 992px){

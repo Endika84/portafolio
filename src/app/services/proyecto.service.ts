@@ -26,7 +26,7 @@ export let proyectosList= [
     new Proyecto(
         "Amatech",
         "Web del grupo de consultoría informática Amatech",
-        "Participé tanto en la decisión tecnológica a utilizar. Tambien ejerci el rol de maquetador mediante React-native.",
+        "Participé en la decisión tecnológica a utilizar y ejerci como maquetador utilizando el framework React-native para realizar el Front.",
         "A pesar de que react-native administra los estilos como si fuesen objetos de javascript, y al principio costo un poco hacerse con la manera en que los administraba, fue una buena práctica.",
         ["Html-JSX", "Css objects","JavaScript", "React-native", "Git"],
         ["imagen-01.png"],
@@ -37,7 +37,7 @@ export let proyectosList= [
     new Proyecto(
         "Auril",
         "Aplicación web para el repositorio de muestras de Osakidetza",
-        "Realicé la maquetación de la aplicación. Aún teniendo que ser realizada mediante C#.net y el lenguaje de plantillas Razor, me desenvolvi perfectamente para ajustar toda la estructura planteada.",
+        "Realicé la maquetación, la cual aún teniendo que ser realizada mediante C#.net y el lenguaje de plantillas Razor, pude desenvolverme perfectamente para ajustar toda la estructura planteada.",
         "La applicacion contaba con una pistola lectora de codigos de barras para clasificar las muestras. Fue todo un reto realizar los estilos para todas las casuisticas, y estudiar la generación de etiquetas para impresión mediante CSS Print.",
         ["Html", "Css", "Less", "C#-Razor", "JavaScript", "JQuery", "SVN"],
         ["imagen-01.png", "imagen-02.png", "imagen-03.png"],
@@ -48,7 +48,7 @@ export let proyectosList= [
     new Proyecto(
         "BOA-Aragon",
         "Web del boletín oficial de Aragón",
-        "Maquetación realizada en Angular con Sass y TailwindCss por petición del cliente.",
+        "Realice la maquetación en el framwork Angular v.13 utilizando los preprocesadores de estilos Sass y TailwindCss por petición del cliente. Tambien tube que implementar algun componente de Angular Material el cual nos ahorraba mucho trabajo en cuanto a funcionalidades.",
         "El gobierno de Aragón implanta sus web con un framework propio llamado 'Desy' el cual aporta multiples funcionalidades basadas en Angular.",
         ["Html", "Css", "Sass", "TailwindCss", "Angular.v13", "Material Angular", "JavaScript", "Git"],
         ["imagen-01.png"],
@@ -169,8 +169,8 @@ export let proyectosList= [
     new Proyecto(
         "Bilbomatica",
         "Web de la consultoría informática Bilbomática",
-        "Participe junto al diseñador senior en la elaboración de toda la interfaz como recursos gráficos. Posteriormente fui el encargado de llevar la maquetación a cabo.",
-        "Fue un orguyo poder realizar la web de mi empresa y que terminara saliendo tan bien.",
+        "Participe junto al diseñador en la elaboración de toda la interfaz asi como de todos los recursos gráficos. Posteriormente fui el encargado de trasladar la maquetación a Drupal.",
+        "Es una de las primeras webs en las que mi empresa confio en mi dandome la capacidad de tomar las decisiones tecnológicas y diseños finales que terminariamos implantando.",
         ["Html", "Css", "Sass", "JavaScript", "JQuery", "Drupal", "Bootstrap", "Photoshop"],
         ["imagen-01.png", "imagen-02.png"],
         ["UX", "UI", "Maquetación", "Desarrollo"],

@@ -11,7 +11,7 @@
         max-width: 900px;
         .image-item{
             .image{
-                width: 100%;
+                max-width: 100%;
                 display: block;
                 border: 10px solid #ffffff1c;
                 box-sizing: border-box;
@@ -123,6 +123,11 @@
     .proyect-detail-article{
         .detail-images-container{
             margin-right: 2.5rem;
+            .image-item{
+                .image{
+                    border: none
+                }
+            }
         }
     }
 }

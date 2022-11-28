@@ -80,6 +80,9 @@
             position: absolute;
             top: 26px;
             right: 1.5rem;
+            span{
+                display: none !important;
+            }
         }
     }
 }
@@ -102,10 +105,15 @@ $anim-speed: 270ms;
     text-align: center;
     height: calc(100vh - 192px);
     font-size: 1.3rem;
-    max-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    p{
+        @media screen and (max-width:767px) {
+            max-width: 280px;
+        }
+        
+    }
 }
 
 .card-list-grid {
@@ -157,11 +165,14 @@ $anim-speed: 270ms;
                         font-size: 25px;
                     }
                     .categories{
-                        bottom: 24px;
+                        bottom: 15px;
                     }
                 }
                 &:hover{
                     .card-project__block{
+                        h1{
+                            bottom: 175px;
+                        }
                         .categories{
                             bottom: 150px;
                         }
@@ -181,7 +192,7 @@ $anim-speed: 270ms;
 @media screen and (max-width: 992px) {
     .card-list-grid {
         grid-template-columns: repeat(3, 1fr);
-        height: calc(100vh - 192px);
+        height: calc(100vh - 180px);
     }
 }
 
@@ -219,23 +230,24 @@ $anim-speed: 270ms;
         background-size: 100%;
         position: relative;
         padding: 20px;
-        min-height: 225px;
+        min-height: 120px;
         display: flex;
         flex-direction: column;
         transition: ease-in .25s;
         overflow: hidden;
         text-align: left;
+        border: 1px solid #51585c;
         h1{
             font-family: $font-b-regular;
             font-weight: 600;
             font-size: 26px;
             line-height: 30px;
             margin: auto 0px 8px 0px;
-            color: $proyectos-bg;
             z-index: 1;
+            color: white;
             transition: ease-in .25s;
             position: absolute;
-            bottom: 39px;
+            bottom: 25px;
         }
         .categories{
             font-family: $font-b-regular;
@@ -246,10 +258,11 @@ $anim-speed: 270ms;
             margin: 0px;
             z-index: 1;
             position: absolute;
-            bottom: 28px;
+            bottom: 15px;
             transition: ease-in .25s;
             font-weight: 300;
             font-family: "Rawline";
+            opacity: .45;
         }
         .description{
             font-family: $font-b-regular;
@@ -289,20 +302,21 @@ $anim-speed: 270ms;
             background-size: 120%;
             transition: ease-in .25s;
             h1{
-                font-size: 32px;
+                font-size: 30px;
                 line-height: 35px;
-                bottom: 127px;
+                bottom: 107px;
+                color: $accent-color;
             }
             .categories{
                 font-weight: 500;
-                bottom: 115px;
+                bottom: 97px;
             }
             .description{
                 opacity: 1;
                 bottom: 20px;
-                font-size: 18px;
+                font-size: 17px;
                 text-align: left;
-                line-height: 23px;
+                line-height: 22px;
                 
             }
             &--overlay{
