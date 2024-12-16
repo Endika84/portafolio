@@ -1,7 +1,7 @@
 <article class="proyect-detail-article">
     <div class="detail-images-container" *ngIf="proyectoSeleccionado.imagenes.length != 0">
         <div class="image-item" *ngFor="let image of proyectoSeleccionado.imagenes">
-            <img class="image" src="'../../../assets/images/projects/{{proyectoSeleccionado.titulo.toLowerCase()}}/detalle/{{image}}" alt="Detalle">
+            <img class="image" src="./assets/images/projects/{{proyectoSeleccionado.titulo.toLowerCase()}}/detalle/{{image}}" alt="Detalle">
         </div>
     </div>
     <div class="detail-info-container">
