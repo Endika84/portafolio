@@ -41,29 +41,55 @@
     </div>
     <div class="right-content">
         <h2>Certificaciones destacadas</h2>
-        <swiper [pagination]="true" [loop]="true" [pagination]="{clickable: true}" [autoplay]="{delay: 5000}" class="cetifications-swiper">
+        <p>Pulsa en cada una para ver el original.</p>
+        <swiper [loop]="true" [pagination]="{clickable: true}" [speed]="800" [spaceBetween]="16" [autoplay]="{delay: 4000, disableOnInteraction: false}" class="cetifications-swiper">
             <ng-template swiperSlide>
-                <a href="" target="_blank" title="Certificación UX-PM Nivel 2">
-                    <img src="./assets/images/certifications/ux-certification.svg" alt="">
+                <a href="./assets/images/certifications/originals/diseno-web-certification.pdf" target="_blank" title="Certificación diseño web y multimedia">
+                    <img src="./assets/images/certifications/web-design-certification.svg" alt=""/>
                 </a>
             </ng-template>
             <ng-template swiperSlide>
-                <a href="" target="_blank" title="Certificación UX-PM Nivel 2">
-                    <img src="./assets/images/certifications/ux-certification.svg" alt="">
+                <a href="./assets/images/certifications/originals/git-github-certification.pdf" target="_blank" title="Certificación Git-GitHub">
+                    <img src="./assets/images/certifications/git-certification.svg" alt=""/>
                 </a>
             </ng-template>
             <ng-template swiperSlide>
-                <a href="" target="_blank" title="Certificación UX-PM Nivel 2">
-                    <img src="./assets/images/certifications/ux-certification.svg" alt="">
+                <a href="./assets/images/certifications/originals/ux-certification.pdf" target="_blank" title="Certificación UX-PM Nivel 2">
+                    <img src="./assets/images/certifications/ux-certification.svg" alt=""/>
+                </a>
+            </ng-template>
+            <ng-template swiperSlide>
+                <a href="./assets/images/certifications/originals/angular-certification.pdf" target="_blank" title="Certificación angular">
+                    <img src="./assets/images/certifications/angular-certification.svg" alt=""/>
+                </a>
+            </ng-template>
+            <ng-template swiperSlide>
+                <a href="./assets/images/certifications/originals/js-certification.pdf" target="_blank" title="Certificación javascript avanzado">
+                    <img src="./assets/images/certifications/js-certification.svg" alt=""/>
+                </a>
+            </ng-template>
+            <ng-template swiperSlide>
+                <a href="./assets/images/certifications/originals/ts-certification.pdf" target="_blank" title="Certificación typescript">
+                    <img src="./assets/images/certifications/ts-certification.svg" alt=""/>
+                </a>
+            </ng-template>
+            <ng-template swiperSlide>
+                <a href="./assets/images/certifications/originals/node-certification.pdf" target="_blank" title="Certificación nodejs">
+                    <img src="./assets/images/certifications/node-certification.svg" alt=""/>
+                </a>
+            </ng-template>
+            <ng-template swiperSlide>
+                <a href="./assets/images/certifications/originals/sql-certification.pdf" target="_blank" title="Certificación sql">
+                    <img src="./assets/images/certifications/sql-certification.svg" alt=""/>
                 </a>
             </ng-template>
           </swiper>
-        <h2>Formación complementaria</h2>
-        <ul>
-            <li><strong>Frontend:</strong> Máster en JavaScript, Principios con Angular y React</li>
-            <li><strong>Metodologías CSS:</strong> BEM, OOCSS, POSTCSS <span>(Zamudio)</span></li>
-            <li><strong>Gestión de código:</strong> Git avanzado <span>(Bilbomática)</span></li>
-            <li><strong>SEO:</strong> Optimización on-page <span>(Udemy)</span></li>
+          <h2>Formación continua en</h2>
+          <ul>
+              <li><strong>Frontend:</strong> Enfoque en JavaScript moderno (ES6+), Angular, React y TypeScript.</li>
+              <li><strong>CSS avanzado:</strong> Metodologías como BEM, Atomic design y el uso de preprocesadores como SASS y POSTCSS.</li>
+              <li><strong>Gestión de código:</strong> Dominio de Git y buenas prácticas de control de versiones.</li>
+              <li><strong>Herramientas IA:</strong> Utilización de IAs generativas para agilizar los desarrollos y contenidos.</li>
           </ul>
     
         <h2>Idiomas</h2>

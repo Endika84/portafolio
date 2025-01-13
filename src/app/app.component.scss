@@ -33,12 +33,13 @@ header{
         &__name{
             font-family: $font-a-regular;
             font-weight: 400;
+            letter-spacing: 1px;
             font-size: $font-x;
             margin: 15px 0px 5px;
         }
         &__role{
             font-family: $font-a-regular;
-            font-weight: 100;
+            font-weight: 600;
             color: $highlighted-font-color;
             font-size: $font-xxxl;
             margin: 0px;
@@ -47,12 +48,13 @@ header{
                 // display: block;
                 // color: #9da7a0;
                 // margin-top: 5px;
-                font-size: 14px;
+                font-size: 15px;
+                font-weight: 400;
                 display: block;
-                margin-top: 13px;
-                background: #2d4a5a;
-                border-radius: 17px;
-                padding: 4px 12px;
+                margin-top: 1.5rem;
+                background: #203340;
+                border-radius: 9px;
+                padding: .5rem .75rem;
                 color: #f2f2f2;
                 width: fit-content;
                 margin-left: auto;
@@ -72,6 +74,9 @@ header{
             .menu-item{
                 border-bottom: 1px solid rgba($base-font-color, 0.05);
                 &__link{
+                    font-size: 1.125rem;
+                    font-weight: 400;
+                    letter-spacing: .7px;
                     color: $base-font-color;
                     text-decoration: none;
                     padding: 0rem 2.5rem;
@@ -79,7 +84,6 @@ header{
                     display: flex;
                     align-items: center;
                     transition: ease-in-out .1s;
-                    font-weight: 300;
                     &.active{
                         color: $header-bg;
                         padding-left: 4rem;
@@ -227,12 +231,12 @@ header{
     header{
         min-width: inherit;
         .main-user{
-            padding: 1rem 1rem 2rem;
+            padding: 2rem 1rem 2rem;
             height: 76px;
             &__image{
-                width: 136px;
-                height: 136px;
-                min-height: 136px;
+                width: 176px;
+                height: 176px;
+                min-height: 176px;
                 border: 7px solid rgba(255, 255, 255, 0.06);
             }
             &__role{
@@ -365,7 +369,7 @@ header{
         }
         h1{
             font-family: $font-a-regular;
-            font-weight: 100;
+            font-weight: 400;
             font-size: $font-xxl;
             margin: 0.3rem 0rem 1.25rem;
         }
