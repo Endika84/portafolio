@@ -8,8 +8,8 @@
     </div>
     <h1 class="main-user__name">Endika Llonin Abasolo</h1>
     <h2 class="main-user__role">
-      Maquetador web
-      <span class="subtitle">UX-UI & Front-End designer</span>
+      Frontend Designer
+      <span class="subtitle">Specialist in UX/UI development</span>
     </h2>
   </div>
   <div class="menu-btn only-responsive" (click)="showMenu()">
@@ -31,13 +31,13 @@
         <a class="menu-item__link" routerLink="/proyectos" [routerLinkActive]="['active']" ngClass="{{menuItems[1]}}" (click)="changeMenu($event)">Proyectos</a>
       </li>
       <li class="menu-item">
-        <a class="menu-item__link" routerLink="/conocimientos" [routerLinkActive]="['active']" ngClass="{{menuItems[2]}}" (click)="changeMenu($event)">Conocimientos</a>
+        <a class="menu-item__link" routerLink="/conocimientos" [routerLinkActive]="['active']" ngClass="{{menuItems[2]}}" (click)="changeMenu($event)">Mi Stack</a>
       </li>
       <li class="menu-item">
-        <a class="menu-item__link" routerLink="/experiencia" [routerLinkActive]="['active']" ngClass="{{menuItems[3]}}" (click)="changeMenu($event)">Experiencia</a>
+        <a class="menu-item__link" routerLink="/experiencia" [routerLinkActive]="['active']" ngClass="{{menuItems[3]}}" (click)="changeMenu($event)">Experiencias</a>
       </li>
       <li class="menu-item">
-        <a class="menu-item__link" routerLink="/contacto" [routerLinkActive]="['active']" ngClass="{{menuItems[4]}}" (click)="changeMenu($event)">Contacto</a>
+        <a class="menu-item__link" routerLink="/contacto" [routerLinkActive]="['active']" ngClass="{{menuItems[4]}}" (click)="changeMenu($event)">Contáctame</a>
       </li>
     </ul>
     <div class="menu-marker {{selectedItem}}">

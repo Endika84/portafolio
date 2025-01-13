@@ -8,7 +8,7 @@ export let proyectosList= [
         "Debido a la tipología del layout, decidí añadir distintas plantillas mediante la propiedad GRID de css al contenedor principal, de forma que nos permitiese jugar con total libertad con la posición de los componentes. ",
         ["Html", "Css", "Sass", "JavaScript", "JQuery", "Java", "Bootstrap", "Git"],
         ["imagen-01.jpg", "imagen-02.png", "imagen-03.png"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "https://www.euskalmet.euskadi.eus/inicio/",
         "portada-euskalmet.webp"
     ),
@@ -19,7 +19,7 @@ export let proyectosList= [
         "Debido al sistema de columnas para cada declarante, se tubo que hilar muy fino mediante javascript para calcular las alturas de los contenidos. Fue un reto apasionante.",
         ["Html", "Css", "Sass", "JavaScript", "React", "PrimeReact", "PrimeIcons", "JQuery", "BEM", "Git"],
         ["imagen-01.png", "imagen-02.png", "imagen-03.png", "imagen-04.png"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "https://www.ebizkaia.eus/es/inicio",
         "portada-renta.webp"
     ),
@@ -30,8 +30,9 @@ export let proyectosList= [
         "A pesar de que react-native administra los estilos como si fuesen objetos de javascript, y al principio costo un poco hacerse con la manera en que los administraba, fue una buena práctica.",
         ["Html-JSX", "Css objects","JavaScript", "React-native", "Git"],
         ["imagen-01.png"],
-        ["UX", "UI", "Desarrollo"],
-        "https://amatech-group.com/",
+        ["UX/UI", "Desarrollo"],
+        "",
+        // "https://amatech-group.com/",
         "portada-amatech.webp"
     ),
     new Proyecto(
@@ -41,7 +42,7 @@ export let proyectosList= [
         "La applicacion contaba con una pistola lectora de codigos de barras para clasificar las muestras. Fue todo un reto realizar los estilos para todas las casuisticas, y estudiar la generación de etiquetas para impresión mediante CSS Print.",
         ["Html", "Css", "Less", "C#-Razor", "JavaScript", "JQuery", "SVN"],
         ["imagen-01.png", "imagen-02.png", "imagen-03.png"],
-        ["UX", "UI"],
+        ["UX/UI"],
         "",
         "portada-auril.webp"
     ),
@@ -52,7 +53,7 @@ export let proyectosList= [
         "El gobierno de Aragón implanta sus web con un framework propio llamado 'Desy' el cual aporta multiples funcionalidades basadas en Angular.",
         ["Html", "Css", "Sass", "TailwindCss", "Angular.v13", "Material Angular", "JavaScript", "Git"],
         ["imagen-01.png"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "http://www.boa.aragon.es/",
         "portada-boa.webp"
     ),
@@ -63,8 +64,8 @@ export let proyectosList= [
         "Fue un proyecto largo desarrollado mediante el CMS Drupal, para el cual era uno de los principales maquetadores y gestores de contenido.",
         ["Html", "Css", "Less", "JavaScript", "JQuery", "Drupal", "Bootstrap"],
         ["imagen-01.png", "imagen-02.jpg", "imagen-03.jpg"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
-        "https://osha.europa.eu/es",
+        ["UX/UI", "Maquetación", "Desarrollo"],
+        "https://healthy-workplaces.osha.europa.eu/es",
         "portada-campaigns.webp"
     ),
     new Proyecto(
@@ -74,7 +75,7 @@ export let proyectosList= [
         "En esta epoca estaba comenzando a hacerse popular Adobe XD, que fue lo que aprendi y utilice para llevarlo a cabo, apoyandome en Photoshop para el retoque de imagenes, e illustrator para la elaboración de la iconografia.",
         ["Adobe XD", "Photoshop", "Ilustrator"],
         ["imagen-01.jpg", "imagen-02.jpg", "imagen-03.jpg", "imagen-04.jpg"],
-        ["UX", "UI"],
+        ["UX/UI"],
         "",
         "portada-cuenca.webp"
     ),
@@ -85,7 +86,7 @@ export let proyectosList= [
         "En esta web aprendi mucho en cuanto a accesibilidad se refiere, ya que al tratarse de una web gubernamental habia que prestarle expecial atención.",
         ["Html", "Css", "JavaScript", "Liferay", "Bootstrap"],
         ["imagen-01.png"],
-        ["UX", "UI"],
+        ["UX/UI"],
         "https://jjggbizkaia.eus/es/inicio",
         "portada-jjgg.webp"
     ),
@@ -96,8 +97,8 @@ export let proyectosList= [
         "En esta epoca estaba comenzando a hacerse popular Adobe XD, que fue lo que aprendi y utilice para llevarlo a cabo, apoyandome en Photoshop para el retoque de imagenes, e illustrator para la elaboración de la iconografia.",
         ["Adobe XD", "Photoshop", "Ilustrator"],
         ["imagen-01.jpg", "imagen-02.jpg", "imagen-03.jpg"],
-        ["UX", "UI"],
-        "http://www.google.es",
+        ["UX/UI"],
+        "",
         "portada-llanes.webp"
     ),
     new Proyecto(
@@ -118,8 +119,8 @@ export let proyectosList= [
         "Debido a que Platea se encuentra en constante evolución y cambios, primero realice una maquetación estatica con Sass, para que posteriormente resultara mucho mas sencilla su integración en el portal.",
         ["Html", "Css", "Sass", "JavaScript", "CMS Platea"],
         ["imagen-01.png", "imagen-02.png", "imagen-03.png"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
-        "https://www.museopoliciavasca.eus/es/",
+        ["UX/UI", "Maquetación", "Desarrollo"],
+        "https://arkauteakademiamuseoa.euskadi.eus/inicio/",
         "portada-museo.webp"
     ),
     new Proyecto(
@@ -129,7 +130,7 @@ export let proyectosList= [
         "En esta epoca fue en donde decidi proponer que pasaramos de Less a Sass ya que veia que tendria mayor futuro puesto que boostrap lo tomo como estandar en su framework.",
         ["Html", "Css", "Sass", "JavaScript", "Drupal", "Bootstrap"],
         ["imagen-01.png"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "https://oiraproject.eu/es",
         "portada-oira.webp"
     ),
@@ -140,7 +141,7 @@ export let proyectosList= [
         "Realice el diseño y quedaron encantados, pero finalmente nunca llegamos a materializarlo en un desarrollo.",
         ["Adobe XD", "Illustrator"],
         ["imagen-01.jpg", "imagen-02.jpg"],
-        ["UX", "UI"],
+        ["UX/UI"],
         "https://setis.ec.europa.eu/index_en",
         "portada-setis.webp"
     ),
@@ -151,7 +152,7 @@ export let proyectosList= [
         "Tuve que realizar una labor mediante css y javascript para poder dar vida al video por pasos de la página principal. Mis primeros pinitos con javascript profesionalmente.",
         ["Html", "Css", "JavaScript", "JQuery"],
         ["imagen-01.jpg", "imagen-02.jpg", "imagen-03.jpg"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "https://turismo.euskadi.eus/",
         "portada-turismo.webp"
     ),
@@ -162,7 +163,7 @@ export let proyectosList= [
         "Genere la mayor parte de recursos gráficos, los cuales elabore a mano. La maquetación fue sencilla ya que tenia el control de toda la estructura, no como en otros proyectos, que los programadores te dan ya un esqueleto previo (lo cual desaconsejo!).",
         ["Html", "Css", "Sass", "JavaScript", "JQuery", "Drupal", "Bootstrap"],
         ["imagen-01.jpg", "imagen-02.jpg", "imagen-03.jpg"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "https://eguides.osha.europa.eu/vehicle-safety/",
         "portada-vesafe.webp"
     ),
@@ -173,7 +174,7 @@ export let proyectosList= [
         "Es una de las primeras webs en las que mi empresa confio en mi dandome la capacidad de tomar las decisiones tecnológicas y diseños finales que terminariamos implantando.",
         ["Html", "Css", "Sass", "JavaScript", "JQuery", "Drupal", "Bootstrap", "Photoshop"],
         ["imagen-01.png", "imagen-02.png"],
-        ["UX", "UI", "Maquetación", "Desarrollo"],
+        ["UX/UI", "Maquetación", "Desarrollo"],
         "https://www.bilbomatica.es/index.php/es/quienes-somos",
         "portada-bilbomatica.png"
     )

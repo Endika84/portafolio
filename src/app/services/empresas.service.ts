@@ -6,8 +6,8 @@ export let empresasList = [
     'eurohelp-logo.svg',
     'Analista como Maquetador Web y UX-Ui',
     '07-2019',
-    'Actualmente',
-    'Actualmente, ejerzo como maquetador web en distintos frameworks de Javascript como Angular y React. En este tiempo, también he podido participar en proyectos destacados como pueden ser la nueva web de la agencia meteorológica vasca Euskalmet, la web de Renta de Bizkaia o la web del museo de la policía vasca. También realizo labores de usabilidad y diseño para proyectos web de instituciones públicas (en su mayoría). Y aunque en menor medida, de vez en cuando me ha tocado realizar labores de supervisión de trabajos relativos a maquetación o UX dentro del equipo.'
+    '08-2023',
+    'He trabajado como maquetador web utilizando frameworks de JavaScript como Angular y React. Durante este tiempo, he participado en proyectos destacados, como la nueva web de la agencia meteorológica vasca Euskalmet, la web de Renta de Bizkaia y la del museo de la policía vasca. Además, he contribuido en tareas de usabilidad y diseño para proyectos web, principalmente de instituciones públicas. Aunque en menor medida, también he desempeñado labores de supervisión dentro del equipo, asegurando la calidad del trabajo realizado.'
   ),
   new Empresa(
     'Everis',
@@ -15,7 +15,7 @@ export let empresasList = [
     'Analista como Maquetador Web',
     '07-2018',
     '07-2019',
-    'Mi función principal era la de maquetar en Liferay los nuevos portales de la universidad de Navarra (UPNA). Posteriormente, participe en la maquetación de las nuevas webs de Correos, la cual estaba realizada con JQueryMobile y la realización de un design system prototipado para Mutualia con su posterior integración mediante componentes angular (mi función era diseñarlos y maquetarlos).'
+    'Mi principal función fue la maquetación de los nuevos portales de la Universidad Pública de Navarra (UPNA) en Liferay. Posteriormente, participé en la maquetación de las nuevas webs de Correos, desarrolladas con JQueryMobile, y en la creación de un design system prototipado para Mutualia. En este último proyecto, me encargué de diseñar y maquetar los componentes, que posteriormente se integraron en Angular.'
   ),
   new Empresa(
     'Bilbomática',
@@ -23,7 +23,7 @@ export let empresasList = [
     'Maquetador Web Senior',
     '07-2015',
     '07-2018',
-    'Me especialicé en maquetación y diseño web. Principalmente participaba en proyectos para la Comunidad Europea, desde mantener reuniones de toma de requisitos, a realizar diseños, o finalmente realizar la maquetación de dichos proyectos. La mayoría de los proyectos los tenía que maquetar en Drupal, pero también fue una época en la que irrumpió Angular y fue divertido ver que existen herramientas más limpias para realizar buenas estructuras de HTML. En esta época conocí a muy buenos profesionales y aprendí un montón de herramientas que me ayudaron en mi desarrollo, de lo cual, les estaré eternamente agradecido.'
+    'Me especialicé en maquetación y diseño web, participando principalmente en proyectos para la Comunidad Europea. Mis responsabilidades abarcaban desde la toma de requisitos en reuniones con clientes hasta el diseño y la maquetación de los proyectos. La mayoría de ellos se maquetaron en Drupal, aunque fue en esa época cuando Angular comenzó a ganar popularidad, y descubrí lo eficiente que puede ser para estructurar HTML de manera más limpia y organizada. Durante este periodo, tuve la oportunidad de trabajar con grandes profesionales y aprender herramientas que marcaron mi desarrollo profesional, algo por lo que siempre estaré agradecido.'
   ),
   new Empresa(
     'Triporg',
@@ -31,7 +31,7 @@ export let empresasList = [
     'Maquetador web',
     '02-2015',
     '06-2015',
-    'Fueron mis prácticas de empresa una vez haber terminado los estudios superiores de Desarrollo Web (DAW). Fue un lugar que me sirvió para saber en qué dirección debía enfocar mis esfuerzos. En un primer momento, querían que desarrollase en Android cuando nunca he sido desarrollador, es por ello que mi responsable supo ver mis virtudes y me enfoco en el diseño de layouts para Android mientras me hacía pegarme con millones de páginas de documentación, llegando a realizar la maquetación de alguna aplicación móvil pequeñita. Se puede decir que en esta empresa es donde aprendí a sacarme las castañas del fuego por mi mismo, y actualmente es así como continuo aprendiendo por mi cuenta cada día más.'
+    'Realicé estas prácticas de empresa tras finalizar mis estudios superiores en Desarrollo de Aplicaciones Web (DAW). Fue una experiencia que me ayudó a definir la dirección en la que debía enfocar mis esfuerzos profesionales. Inicialmente, el objetivo era que desarrollara en Android, aunque nunca había trabajado como desarrollador. Sin embargo, mi responsable supo identificar mis fortalezas y me orientó hacia el diseño de layouts para Android, lo que me llevó a enfrentarme a interminables páginas de documentación técnica. Gracias a ello, logré maquetar algunas aplicaciones móviles pequeñas. Esta experiencia fue clave para aprender a resolver problemas por mi cuenta y "sacarme las castañas del fuego", una habilidad que sigo aplicando hoy en día para continuar aprendiendo y mejorando de manera autodidacta.'
   ),
   new Empresa(
     'Cime',
@@ -39,7 +39,7 @@ export let empresasList = [
     'Maquetador web',
     '01-2009',
     '05-2009',
-    'Beca para participar en la elaboración de la web del ayuntamiento de Etxebarri. Fueron unas prácticas posteriores a la finalización del máster en Desarrollo web y Multimedia. Sobre todo realizaba labores de mantenimiento de contenidos y edición de código Html y Css.'
+    'Participé, mediante una beca, en la elaboración de la web del Ayuntamiento de Etxebarri. Estas prácticas, realizadas tras finalizar el máster en Desarrollo Web y Multimedia, se centraron principalmente en labores de mantenimiento de contenidos y edición de código HTML y CSS. Fue una experiencia enriquecedora que me permitió aplicar mis conocimientos y adquirir mayor soltura en la gestión y actualización de sitios web.'
   ),
   new Empresa(
     'Gestionet S.L',
@@ -47,7 +47,7 @@ export let empresasList = [
     'Diseñador Gráfico',
     '10-2007',
     '07-2008',
-    'Participé en la generación de material gráfico para el desarrollo de videojuegos, merchandising, cartelería, banners, ... sinceramente el diseño siempre me ha gustado, pero la tecnología más, y fue en esta empresa donde trabajando cerca de la mesa de un programador y viéndole todos los días como se pegaba con código (en aquel momento ininteligible para mí), donde descubrí que a mí lo que me llamaba la atención en realidad era el tema del desarrollo web en su versión artística. Quien iba a decir que ese compañero de al lado seria uno de los causantes de que hoy en día me haya convertido en un maquetador web. Gracias Andoni ;)'
+    'Participé en la creación de material gráfico para el desarrollo de videojuegos, merchandising, cartelería, banners, entre otros. Siempre me ha apasionado el diseño, pero la tecnología me atraía aún más, y fue en esta empresa donde descubrí mi interés por el desarrollo web. Trabajando cerca de un programador, veía a diario cómo lidiaba con líneas de código (en ese momento ininteligibles para mí) y comencé a interesarme por esa combinación entre diseño y tecnología. Esa experiencia marcó un punto de inflexión en mi trayectoria, llevándome a explorar el desarrollo web desde una perspectiva artística. Quién iba a decir que ese compañero, Andoni, sería una de las personas que inspiraría mi camino hacia la maquetación web. ¡Gracias, Andoni! 😊'
   ),
   new Empresa(
     'MBN Comunicación',
@@ -55,6 +55,6 @@ export let empresasList = [
     'Diseñador Gráfico',
     '08-2006',
     '03-2007',
-    'Mi primera empresa "seria" ¡Qué nervios!. No, la verdad que no fue para tanto, pero si puedo asegurar que me curtieron bien, sobre todo a la hora de ser detallista en los diseños y disciplinado para con el trabajo que presento. Participé en un montón de proyectos ligados a empresas de renombre vascas. ETB, Teknalia, Athletik, ... Quien iba a decir que darían la oportunidad a un crío como yo. ¡Muchísimas gracias chic@s!'
+    'Mi primera experiencia en una empresa "seria". Al principio, ¡qué nervios! Pero pronto descubrí que no era para tanto. Lo que sí puedo asegurar es que allí me curtí, especialmente en la atención al detalle en los diseños y en la disciplina necesaria para presentar un trabajo de calidad. Tuve la oportunidad de participar en numerosos proyectos vinculados a empresas de renombre en el País Vasco, como ETB, Tecnalia y Athletic Club. Fue increíble que confiaran en alguien tan joven como yo, y esa confianza marcó un antes y un después en mi desarrollo profesional. ¡Muchísimas gracias, equipo!'
   ),
 ];

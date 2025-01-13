@@ -28,7 +28,7 @@ ul{
 section{
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     min-height: 100%;
     .left-content{
         padding-right: 4rem;
@@ -92,8 +92,12 @@ section{
         }
         ul{
             margin-left: 1rem;
+            display: inherit;
             li{
                 font-weight: 100;
+                strong{
+                    opacity: .4;
+                }
             }
         }
     }
@@ -122,6 +126,9 @@ section{
                 margin-bottom: 0.3rem;
                 line-height: 24px;
                 font-weight: 100;
+                strong{
+                    opacity: .4;
+                }
             }
         }
     }

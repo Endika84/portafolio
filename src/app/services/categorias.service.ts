@@ -1,8 +1,7 @@
 export const Categorias= [
-    "UX",
-    "UI",
+    "UX/UI",
     "Maquetación",
     "Desarrollo",
-    "Ilustración",
-    "Branding"
+    // "Ilustración",
+    // "Branding"
 ];

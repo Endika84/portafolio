@@ -11,7 +11,7 @@ import { empresasList } from 'src/app/services/empresas.service';
 })
 export class ExperienciaComponent implements OnInit {
 
-  public pageTitle= "Experiencia";
+  public pageTitle= "Experiencias";
   public empresas= empresasList;
 
   constructor(
