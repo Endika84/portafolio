@@ -3,7 +3,9 @@
 
 @import "styles/variables";
 
-
+html{
+    line-height: inherit;
+}
 body{
     background-color: $body-bg;
     color: $base-font-color;
