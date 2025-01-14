@@ -4,7 +4,7 @@ export let empresasList = [
   new Empresa(
     'Eurohelp Consulting',
     'eurohelp-logo.svg',
-    'Analista como Maquetador Web y UX-Ui',
+    'Senior Frontend Designer y Especialista en UX/UI',
     '07-2019',
     '08-2023',
     'He trabajado como maquetador web utilizando frameworks de JavaScript como Angular y React. Durante este tiempo, he participado en proyectos destacados, como la nueva web de la agencia meteorológica vasca Euskalmet, la web de Renta de Bizkaia y la del museo de la policía vasca. Además, he contribuido en tareas de usabilidad y diseño para proyectos web, principalmente de instituciones públicas. Aunque en menor medida, también he desempeñado labores de supervisión dentro del equipo, asegurando la calidad del trabajo realizado.'
@@ -12,7 +12,7 @@ export let empresasList = [
   new Empresa(
     'Everis',
     'everis-logo.svg',
-    'Analista como Maquetador Web',
+    'Senior Frontend Designer',
     '07-2018',
     '07-2019',
     'Mi principal función fue la maquetación de los nuevos portales de la Universidad Pública de Navarra (UPNA) en Liferay. Posteriormente, participé en la maquetación de las nuevas webs de Correos, desarrolladas con JQueryMobile, y en la creación de un design system prototipado para Mutualia. En este último proyecto, me encargué de diseñar y maquetar los componentes, que posteriormente se integraron en Angular.'
